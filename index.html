@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- estilos css -->
+     <link rel="stylesheet" href="style.css">    
+    <title>Enncriptador de textos</title>
+</head>
+<body>
+<!-- cabecera con logotipo Alura -->
+    <header class="container-logo">
+        <a class="img" href="#">
+          <img src="assets/Logo.png" alt="logotipo ALuraLatam" />
+         </a>
+      </header>
+      
+      <main>
+        <div class="container">
+<!-- seccion de formulario -->
+            <section class="form box">
+                <form id="encriptarTexto">
+                    <label for="input-texto"></label>
+                    <textarea name="input-texto" id="input-texto" class="text-input" cols="100" rows="50" placeholder="ingrese el texto aqui"></textarea>
+                    <div class="text-info"> 
+                        <img src="assets/bi_exclamation-circle-fill.png" alt="">
+                        <p>  
+                          Solo letras minúsculas, sin acento
+                        </p>
+                    </div>
+
+                    <div class="btn">
+                        <input class="btn-encriptar" type="submit" value="encriptar!" id="btn-encriptar">
+                        <input class="btn-desencriptar" type="submit" value="desencriptar!" id="btn-desencriptar">
+                    </div>
+                </form>
+            </section class="resultado_content">
+            <!-- seccion de resultado -->
+            <section class="msg box">
+                <div  class="msje-encriptado " >
+                    <h2 id="title">Mensaje encriptado:</h2>
+                    <textarea name="" id="msg" class="text-input" cols="50" rows="10"></textarea>
+                    <input class=" btn-encriptar" type="submit" value="copiar" id="btn-copy">
+                  </div>
+                  <div class="image" id="switch-div">
+                    <img src="assets/Muñeco.svg" alt="">
+                    <div>
+                      <h4 class="subtitle">Ningun mensaje fue encontrado</h4>
+                      <p class="text">ingresa el texto que deseas encriptar o desencriptar</p>
+                    </div>
+                  </div>
+
+            </section>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p>Desarrollado por <a href="#">Juan pablo Ayoroa</a></p>
+      </footer>
+    <script src="validadorDeTexto.js"></script>
+    <script src="script.js"></script>
+    <script src="encriptador.js"></script>
+    
+</body>
+</html>
